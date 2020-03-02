@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="#"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            p { color: blue; }
+            .redStuff { color: red; }
+            a { 
+                display: inline-block;
+                text-decoration: none;
+                padding: 20px;
+                background-color: green;
+                border: 1px solid red;
+                border-radius: 10px;
+                margin: 10px;
+                color: white;
+            }
+            a:hover { 
+                transition: 0.5s;
+                background-color: yellow;
+                color: black;
+                padding: 25px;
+            }
+            .blueBox {
+                width: 100px;
+                height: 100px; 
+                background-color: blue;
+                -webkit-animation-name: colorAndSize;
+                -webkit-animation-duration: 3s;
+            }
+            @-webkit-keyframes colorAndSize {
+                0% { background-color: blue; width: 100px;}
+                25% { background-color: yellow; width: 200px;}
+                50% { background-color: purple; width: 300px;}
+                100% { background-color: red; width: 100px;}
+            }
+            .leftSide {
+                float: left;
+                width: 200px;
+                padding: 20px;
+            }
+            .rightSide { 
+                margin-left: 200px;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1>We are Learning CSS!</h1>
+        <div class="leftSide">   
+            <p>This is a paragraph about stuff. It will be colored blue because my CSS says that all paragraphs will be colored blue.</p>
+            <p class="redStuff">This is another paragraph about stuff. It will also be blue, because my CSS says that all paragraphs will be blue.</p>
+        </div>
+        <div class="rightSide">
+            <p>This is ANOTHER paragraph about stuff. It will be red. Even though my CSS says that all paragraphs should be blue, I will make this paragraph a class called redStuff. All redStuff class paragraphs will be colored red.</p>
+            <p class="redStuff">This is another paragraph about stuff. It will also be blue, because my CSS says that all paragraphs will be blue.</p>
+            <p>This is another paragraph about stuff. It will also be blue, because my CSS says that all paragraphs will be blue.</p>
+        </div>
+        <a href="http://apple.com">Click here to go to Apple.com</a><br>
+        <a href="http://google.com">Click here to go to Google.com</a>
+        <div class="blueBox"></div>
+    </body>
+</html>
